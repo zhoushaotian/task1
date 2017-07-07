@@ -1,6 +1,7 @@
 var mock = require('mockjs');
+var { graphql, buildSchema } = require('graphql');
 var shareData = mock.mock({
-    'story|0': [{
+    'story|1-1': [{
             title: 'Jawbone is being liquidated as its CEO launches a related health startup ',
             by: 'janober',
             source: 'techcrunch.com',
@@ -86,5 +87,30 @@ var shareData = mock.mock({
         }
     ],
 });
+console.log(shareData);
+var schemaStory = buildSchema(`
+    type Query{
+        title: [String],
+        source: [String],
+    },
 
-console.log(data);
+`);
+var rootStory = {
+    title: () => {
+        var arr = [];
+        shareData.story.forEach(function(e) {
+            arr.push(e.title);
+        });
+        return arr;
+    },
+    source: () => {
+        var arr = [];
+        shareData.story.forEach(function(e) {
+            arr.push(e.source);
+        });
+        return arr;
+    }
+};
+graphql(schemaStory, '{title,source}', rootStory).then(function(res) {
+    console.log("schema1:", res);
+});
