@@ -1,4 +1,5 @@
 var mock = require('mockjs');
+var handlebars = require('handlebars');
 var { graphql, buildSchema } = require('graphql');
 var shareData = mock.mock({
     'story|1-1': [{
@@ -113,4 +114,11 @@ var rootStory = {
 };
 graphql(schemaStory, '{title,source}', rootStory).then(function(res) {
     console.log("schema1:", res);
+    //拿到数据 开始渲染页面
+    var source = document.getElementById('entry-template').innerHTML;
+    var template = handlebars.compile(source);
+    var content = {
+        item: res.data.source
+    }
+
 });

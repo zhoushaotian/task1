@@ -9,7 +9,21 @@
 </head>
 
 <body>
-
+    <div id="app">
+    </div>
+    <script id="entry-template" type="text/x-handlebars-template">
+        <div class="list">
+            <ol>
+                {{#item}}
+                <li>
+                    <span>{{title}}</span>
+                    <span>{{by}}</span>
+                    <span>{{source}}</span>
+                </li>
+                {{/item}}
+            </ol>
+        </div>
+    </script>
 </body>
 
 </html>
