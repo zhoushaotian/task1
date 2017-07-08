@@ -1,11 +1,16 @@
 module.exports = {
     entry: {
-        task: './src/index.js'
+        task: './src/index.js',
     },
     output: {
         path: __dirname + '/build',
-        filename: '[name].js',
-        library: 'task',
+        filename: 'build.js',
         libraryTarget: 'umd'
+    },
+    module: {
+        loaders: [{
+            test: /\.hbs/,
+            loader: "handlebars-loader"
+        }]
     }
 }
