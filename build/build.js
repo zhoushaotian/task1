@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 108);
+/******/ 	return __webpack_require__(__webpack_require__.s = 109);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -96,7 +96,7 @@ Object.defineProperty(exports, 'GraphQLError', {
   }
 });
 
-var _syntaxError = __webpack_require__(73);
+var _syntaxError = __webpack_require__(74);
 
 Object.defineProperty(exports, 'syntaxError', {
   enumerable: true,
@@ -105,7 +105,7 @@ Object.defineProperty(exports, 'syntaxError', {
   }
 });
 
-var _locatedError = __webpack_require__(72);
+var _locatedError = __webpack_require__(73);
 
 Object.defineProperty(exports, 'locatedError', {
   enumerable: true,
@@ -114,7 +114,7 @@ Object.defineProperty(exports, 'locatedError', {
   }
 });
 
-var _formatError = __webpack_require__(71);
+var _formatError = __webpack_require__(72);
 
 Object.defineProperty(exports, 'formatError', {
   enumerable: true,
@@ -4091,7 +4091,7 @@ exports.parseConstValue = parseConstValue;
 exports.parseTypeReference = parseTypeReference;
 exports.parseNamedType = parseNamedType;
 
-var _source = __webpack_require__(33);
+var _source = __webpack_require__(34);
 
 var _error = __webpack_require__(0);
 
@@ -6235,7 +6235,7 @@ var _typeFromAST = __webpack_require__(7);
 
 var _valueFromAST = __webpack_require__(18);
 
-var _isValidJSValue = __webpack_require__(35);
+var _isValidJSValue = __webpack_require__(36);
 
 var _isValidLiteralValue = __webpack_require__(21);
 
@@ -7480,7 +7480,7 @@ function formatWarning(error) {
   }
   return formatted.trim();
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(70)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(71)))
 
 /***/ }),
 /* 32 */
@@ -7660,6 +7660,791 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _graphql = __webpack_require__(76);
+
+Object.defineProperty(exports, 'graphql', {
+  enumerable: true,
+  get: function get() {
+    return _graphql.graphql;
+  }
+});
+
+var _type = __webpack_require__(81);
+
+Object.defineProperty(exports, 'GraphQLSchema', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLSchema;
+  }
+});
+Object.defineProperty(exports, 'GraphQLScalarType', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLScalarType;
+  }
+});
+Object.defineProperty(exports, 'GraphQLObjectType', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLObjectType;
+  }
+});
+Object.defineProperty(exports, 'GraphQLInterfaceType', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLInterfaceType;
+  }
+});
+Object.defineProperty(exports, 'GraphQLUnionType', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLUnionType;
+  }
+});
+Object.defineProperty(exports, 'GraphQLEnumType', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLEnumType;
+  }
+});
+Object.defineProperty(exports, 'GraphQLInputObjectType', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLInputObjectType;
+  }
+});
+Object.defineProperty(exports, 'GraphQLList', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLList;
+  }
+});
+Object.defineProperty(exports, 'GraphQLNonNull', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLNonNull;
+  }
+});
+Object.defineProperty(exports, 'GraphQLDirective', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLDirective;
+  }
+});
+Object.defineProperty(exports, 'TypeKind', {
+  enumerable: true,
+  get: function get() {
+    return _type.TypeKind;
+  }
+});
+Object.defineProperty(exports, 'DirectiveLocation', {
+  enumerable: true,
+  get: function get() {
+    return _type.DirectiveLocation;
+  }
+});
+Object.defineProperty(exports, 'GraphQLInt', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLInt;
+  }
+});
+Object.defineProperty(exports, 'GraphQLFloat', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLFloat;
+  }
+});
+Object.defineProperty(exports, 'GraphQLString', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLString;
+  }
+});
+Object.defineProperty(exports, 'GraphQLBoolean', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLBoolean;
+  }
+});
+Object.defineProperty(exports, 'GraphQLID', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLID;
+  }
+});
+Object.defineProperty(exports, 'specifiedDirectives', {
+  enumerable: true,
+  get: function get() {
+    return _type.specifiedDirectives;
+  }
+});
+Object.defineProperty(exports, 'GraphQLIncludeDirective', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLIncludeDirective;
+  }
+});
+Object.defineProperty(exports, 'GraphQLSkipDirective', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLSkipDirective;
+  }
+});
+Object.defineProperty(exports, 'GraphQLDeprecatedDirective', {
+  enumerable: true,
+  get: function get() {
+    return _type.GraphQLDeprecatedDirective;
+  }
+});
+Object.defineProperty(exports, 'DEFAULT_DEPRECATION_REASON', {
+  enumerable: true,
+  get: function get() {
+    return _type.DEFAULT_DEPRECATION_REASON;
+  }
+});
+Object.defineProperty(exports, 'SchemaMetaFieldDef', {
+  enumerable: true,
+  get: function get() {
+    return _type.SchemaMetaFieldDef;
+  }
+});
+Object.defineProperty(exports, 'TypeMetaFieldDef', {
+  enumerable: true,
+  get: function get() {
+    return _type.TypeMetaFieldDef;
+  }
+});
+Object.defineProperty(exports, 'TypeNameMetaFieldDef', {
+  enumerable: true,
+  get: function get() {
+    return _type.TypeNameMetaFieldDef;
+  }
+});
+Object.defineProperty(exports, '__Schema', {
+  enumerable: true,
+  get: function get() {
+    return _type.__Schema;
+  }
+});
+Object.defineProperty(exports, '__Directive', {
+  enumerable: true,
+  get: function get() {
+    return _type.__Directive;
+  }
+});
+Object.defineProperty(exports, '__DirectiveLocation', {
+  enumerable: true,
+  get: function get() {
+    return _type.__DirectiveLocation;
+  }
+});
+Object.defineProperty(exports, '__Type', {
+  enumerable: true,
+  get: function get() {
+    return _type.__Type;
+  }
+});
+Object.defineProperty(exports, '__Field', {
+  enumerable: true,
+  get: function get() {
+    return _type.__Field;
+  }
+});
+Object.defineProperty(exports, '__InputValue', {
+  enumerable: true,
+  get: function get() {
+    return _type.__InputValue;
+  }
+});
+Object.defineProperty(exports, '__EnumValue', {
+  enumerable: true,
+  get: function get() {
+    return _type.__EnumValue;
+  }
+});
+Object.defineProperty(exports, '__TypeKind', {
+  enumerable: true,
+  get: function get() {
+    return _type.__TypeKind;
+  }
+});
+Object.defineProperty(exports, 'isType', {
+  enumerable: true,
+  get: function get() {
+    return _type.isType;
+  }
+});
+Object.defineProperty(exports, 'isInputType', {
+  enumerable: true,
+  get: function get() {
+    return _type.isInputType;
+  }
+});
+Object.defineProperty(exports, 'isOutputType', {
+  enumerable: true,
+  get: function get() {
+    return _type.isOutputType;
+  }
+});
+Object.defineProperty(exports, 'isLeafType', {
+  enumerable: true,
+  get: function get() {
+    return _type.isLeafType;
+  }
+});
+Object.defineProperty(exports, 'isCompositeType', {
+  enumerable: true,
+  get: function get() {
+    return _type.isCompositeType;
+  }
+});
+Object.defineProperty(exports, 'isAbstractType', {
+  enumerable: true,
+  get: function get() {
+    return _type.isAbstractType;
+  }
+});
+Object.defineProperty(exports, 'isNamedType', {
+  enumerable: true,
+  get: function get() {
+    return _type.isNamedType;
+  }
+});
+Object.defineProperty(exports, 'assertType', {
+  enumerable: true,
+  get: function get() {
+    return _type.assertType;
+  }
+});
+Object.defineProperty(exports, 'assertInputType', {
+  enumerable: true,
+  get: function get() {
+    return _type.assertInputType;
+  }
+});
+Object.defineProperty(exports, 'assertOutputType', {
+  enumerable: true,
+  get: function get() {
+    return _type.assertOutputType;
+  }
+});
+Object.defineProperty(exports, 'assertLeafType', {
+  enumerable: true,
+  get: function get() {
+    return _type.assertLeafType;
+  }
+});
+Object.defineProperty(exports, 'assertCompositeType', {
+  enumerable: true,
+  get: function get() {
+    return _type.assertCompositeType;
+  }
+});
+Object.defineProperty(exports, 'assertAbstractType', {
+  enumerable: true,
+  get: function get() {
+    return _type.assertAbstractType;
+  }
+});
+Object.defineProperty(exports, 'assertNamedType', {
+  enumerable: true,
+  get: function get() {
+    return _type.assertNamedType;
+  }
+});
+Object.defineProperty(exports, 'getNullableType', {
+  enumerable: true,
+  get: function get() {
+    return _type.getNullableType;
+  }
+});
+Object.defineProperty(exports, 'getNamedType', {
+  enumerable: true,
+  get: function get() {
+    return _type.getNamedType;
+  }
+});
+
+var _language = __webpack_require__(77);
+
+Object.defineProperty(exports, 'Source', {
+  enumerable: true,
+  get: function get() {
+    return _language.Source;
+  }
+});
+Object.defineProperty(exports, 'getLocation', {
+  enumerable: true,
+  get: function get() {
+    return _language.getLocation;
+  }
+});
+Object.defineProperty(exports, 'parse', {
+  enumerable: true,
+  get: function get() {
+    return _language.parse;
+  }
+});
+Object.defineProperty(exports, 'parseValue', {
+  enumerable: true,
+  get: function get() {
+    return _language.parseValue;
+  }
+});
+Object.defineProperty(exports, 'parseType', {
+  enumerable: true,
+  get: function get() {
+    return _language.parseType;
+  }
+});
+Object.defineProperty(exports, 'print', {
+  enumerable: true,
+  get: function get() {
+    return _language.print;
+  }
+});
+Object.defineProperty(exports, 'visit', {
+  enumerable: true,
+  get: function get() {
+    return _language.visit;
+  }
+});
+Object.defineProperty(exports, 'visitInParallel', {
+  enumerable: true,
+  get: function get() {
+    return _language.visitInParallel;
+  }
+});
+Object.defineProperty(exports, 'visitWithTypeInfo', {
+  enumerable: true,
+  get: function get() {
+    return _language.visitWithTypeInfo;
+  }
+});
+Object.defineProperty(exports, 'getVisitFn', {
+  enumerable: true,
+  get: function get() {
+    return _language.getVisitFn;
+  }
+});
+Object.defineProperty(exports, 'Kind', {
+  enumerable: true,
+  get: function get() {
+    return _language.Kind;
+  }
+});
+Object.defineProperty(exports, 'TokenKind', {
+  enumerable: true,
+  get: function get() {
+    return _language.TokenKind;
+  }
+});
+Object.defineProperty(exports, 'BREAK', {
+  enumerable: true,
+  get: function get() {
+    return _language.BREAK;
+  }
+});
+
+var _execution = __webpack_require__(75);
+
+Object.defineProperty(exports, 'execute', {
+  enumerable: true,
+  get: function get() {
+    return _execution.execute;
+  }
+});
+Object.defineProperty(exports, 'defaultFieldResolver', {
+  enumerable: true,
+  get: function get() {
+    return _execution.defaultFieldResolver;
+  }
+});
+Object.defineProperty(exports, 'responsePathAsArray', {
+  enumerable: true,
+  get: function get() {
+    return _execution.responsePathAsArray;
+  }
+});
+Object.defineProperty(exports, 'getDirectiveValues', {
+  enumerable: true,
+  get: function get() {
+    return _execution.getDirectiveValues;
+  }
+});
+
+var _subscription = __webpack_require__(78);
+
+Object.defineProperty(exports, 'subscribe', {
+  enumerable: true,
+  get: function get() {
+    return _subscription.subscribe;
+  }
+});
+Object.defineProperty(exports, 'createSourceEventStream', {
+  enumerable: true,
+  get: function get() {
+    return _subscription.createSourceEventStream;
+  }
+});
+
+var _validation = __webpack_require__(92);
+
+Object.defineProperty(exports, 'validate', {
+  enumerable: true,
+  get: function get() {
+    return _validation.validate;
+  }
+});
+Object.defineProperty(exports, 'ValidationContext', {
+  enumerable: true,
+  get: function get() {
+    return _validation.ValidationContext;
+  }
+});
+Object.defineProperty(exports, 'specifiedRules', {
+  enumerable: true,
+  get: function get() {
+    return _validation.specifiedRules;
+  }
+});
+Object.defineProperty(exports, 'ArgumentsOfCorrectTypeRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.ArgumentsOfCorrectTypeRule;
+  }
+});
+Object.defineProperty(exports, 'DefaultValuesOfCorrectTypeRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.DefaultValuesOfCorrectTypeRule;
+  }
+});
+Object.defineProperty(exports, 'FieldsOnCorrectTypeRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.FieldsOnCorrectTypeRule;
+  }
+});
+Object.defineProperty(exports, 'FragmentsOnCompositeTypesRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.FragmentsOnCompositeTypesRule;
+  }
+});
+Object.defineProperty(exports, 'KnownArgumentNamesRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.KnownArgumentNamesRule;
+  }
+});
+Object.defineProperty(exports, 'KnownDirectivesRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.KnownDirectivesRule;
+  }
+});
+Object.defineProperty(exports, 'KnownFragmentNamesRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.KnownFragmentNamesRule;
+  }
+});
+Object.defineProperty(exports, 'KnownTypeNamesRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.KnownTypeNamesRule;
+  }
+});
+Object.defineProperty(exports, 'LoneAnonymousOperationRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.LoneAnonymousOperationRule;
+  }
+});
+Object.defineProperty(exports, 'NoFragmentCyclesRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.NoFragmentCyclesRule;
+  }
+});
+Object.defineProperty(exports, 'NoUndefinedVariablesRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.NoUndefinedVariablesRule;
+  }
+});
+Object.defineProperty(exports, 'NoUnusedFragmentsRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.NoUnusedFragmentsRule;
+  }
+});
+Object.defineProperty(exports, 'NoUnusedVariablesRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.NoUnusedVariablesRule;
+  }
+});
+Object.defineProperty(exports, 'OverlappingFieldsCanBeMergedRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.OverlappingFieldsCanBeMergedRule;
+  }
+});
+Object.defineProperty(exports, 'PossibleFragmentSpreadsRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.PossibleFragmentSpreadsRule;
+  }
+});
+Object.defineProperty(exports, 'ProvidedNonNullArgumentsRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.ProvidedNonNullArgumentsRule;
+  }
+});
+Object.defineProperty(exports, 'ScalarLeafsRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.ScalarLeafsRule;
+  }
+});
+Object.defineProperty(exports, 'SingleFieldSubscriptionsRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.SingleFieldSubscriptionsRule;
+  }
+});
+Object.defineProperty(exports, 'UniqueArgumentNamesRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.UniqueArgumentNamesRule;
+  }
+});
+Object.defineProperty(exports, 'UniqueDirectivesPerLocationRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.UniqueDirectivesPerLocationRule;
+  }
+});
+Object.defineProperty(exports, 'UniqueFragmentNamesRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.UniqueFragmentNamesRule;
+  }
+});
+Object.defineProperty(exports, 'UniqueInputFieldNamesRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.UniqueInputFieldNamesRule;
+  }
+});
+Object.defineProperty(exports, 'UniqueOperationNamesRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.UniqueOperationNamesRule;
+  }
+});
+Object.defineProperty(exports, 'UniqueVariableNamesRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.UniqueVariableNamesRule;
+  }
+});
+Object.defineProperty(exports, 'VariablesAreInputTypesRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.VariablesAreInputTypesRule;
+  }
+});
+Object.defineProperty(exports, 'VariablesInAllowedPositionRule', {
+  enumerable: true,
+  get: function get() {
+    return _validation.VariablesInAllowedPositionRule;
+  }
+});
+
+var _error = __webpack_require__(0);
+
+Object.defineProperty(exports, 'GraphQLError', {
+  enumerable: true,
+  get: function get() {
+    return _error.GraphQLError;
+  }
+});
+Object.defineProperty(exports, 'formatError', {
+  enumerable: true,
+  get: function get() {
+    return _error.formatError;
+  }
+});
+
+var _utilities = __webpack_require__(88);
+
+Object.defineProperty(exports, 'introspectionQuery', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.introspectionQuery;
+  }
+});
+Object.defineProperty(exports, 'getOperationAST', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.getOperationAST;
+  }
+});
+Object.defineProperty(exports, 'buildClientSchema', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.buildClientSchema;
+  }
+});
+Object.defineProperty(exports, 'buildASTSchema', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.buildASTSchema;
+  }
+});
+Object.defineProperty(exports, 'buildSchema', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.buildSchema;
+  }
+});
+Object.defineProperty(exports, 'extendSchema', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.extendSchema;
+  }
+});
+Object.defineProperty(exports, 'printSchema', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.printSchema;
+  }
+});
+Object.defineProperty(exports, 'printIntrospectionSchema', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.printIntrospectionSchema;
+  }
+});
+Object.defineProperty(exports, 'printType', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.printType;
+  }
+});
+Object.defineProperty(exports, 'typeFromAST', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.typeFromAST;
+  }
+});
+Object.defineProperty(exports, 'valueFromAST', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.valueFromAST;
+  }
+});
+Object.defineProperty(exports, 'astFromValue', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.astFromValue;
+  }
+});
+Object.defineProperty(exports, 'TypeInfo', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.TypeInfo;
+  }
+});
+Object.defineProperty(exports, 'isValidJSValue', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.isValidJSValue;
+  }
+});
+Object.defineProperty(exports, 'isValidLiteralValue', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.isValidLiteralValue;
+  }
+});
+Object.defineProperty(exports, 'concatAST', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.concatAST;
+  }
+});
+Object.defineProperty(exports, 'separateOperations', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.separateOperations;
+  }
+});
+Object.defineProperty(exports, 'isEqualType', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.isEqualType;
+  }
+});
+Object.defineProperty(exports, 'isTypeSubTypeOf', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.isTypeSubTypeOf;
+  }
+});
+Object.defineProperty(exports, 'doTypesOverlap', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.doTypesOverlap;
+  }
+});
+Object.defineProperty(exports, 'assertValidName', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.assertValidName;
+  }
+});
+Object.defineProperty(exports, 'findBreakingChanges', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.findBreakingChanges;
+  }
+});
+Object.defineProperty(exports, 'BreakingChangeType', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.BreakingChangeType;
+  }
+});
+Object.defineProperty(exports, 'DangerousChangeType', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.DangerousChangeType;
+  }
+});
+Object.defineProperty(exports, 'findDeprecatedUsages', {
+  enumerable: true,
+  get: function get() {
+    return _utilities.findDeprecatedUsages;
+  }
+});
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /**
@@ -7685,7 +8470,7 @@ var Source = exports.Source = function Source(body, name) {
 };
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8165,7 +8950,7 @@ function cannotExecuteSchema() {
 }
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8277,7 +9062,7 @@ function isValidJSValue(value, type) {
 }
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8331,7 +9116,7 @@ function ArgumentsOfCorrectType(context) {
 }
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8403,7 +9188,7 @@ function DefaultValuesOfCorrectType(context) {
 }
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8531,7 +9316,7 @@ function getSuggestedFieldNames(schema, type, fieldName) {
 }
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8595,7 +9380,7 @@ function FragmentsOnCompositeTypes(context) {
 }
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8700,7 +9485,7 @@ function KnownArgumentNames(context) {
 }
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8817,7 +9602,7 @@ function getDirectiveLocationForASTPath(ancestors) {
 }
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8863,7 +9648,7 @@ function KnownFragmentNames(context) {
 }
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8939,7 +9724,7 @@ function KnownTypeNames(context) {
 }
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8992,7 +9777,7 @@ function LoneAnonymousOperation(context) {
 }
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9084,7 +9869,7 @@ function NoFragmentCycles(context) {
 }
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9145,7 +9930,7 @@ function NoUndefinedVariables(context) {
 }
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9213,7 +9998,7 @@ function NoUnusedFragments(context) {
 }
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9280,7 +10065,7 @@ function NoUnusedVariables(context) {
 }
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9843,7 +10628,7 @@ function _pairSetAdd(data, a, b, areMutuallyExclusive) {
 }
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9912,7 +10697,7 @@ function getFragmentType(context, name) {
 }
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10005,7 +10790,7 @@ function ProvidedNonNullArguments(context) {
 }
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10062,7 +10847,7 @@ function ScalarLeafs(context) {
 }
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10107,7 +10892,7 @@ function SingleFieldSubscriptions(context) {
 }
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10162,7 +10947,7 @@ function UniqueArgumentNames(context) {
 }
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10217,7 +11002,7 @@ function UniqueDirectivesPerLocation(context) {
 }
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10268,7 +11053,7 @@ function UniqueFragmentNames(context) {
 }
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10328,7 +11113,7 @@ function UniqueInputFieldNames(context) {
 }
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10382,7 +11167,7 @@ function UniqueOperationNames(context) {
 }
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10433,7 +11218,7 @@ function UniqueVariableNames(context) {
 }
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10488,7 +11273,7 @@ function VariablesAreInputTypes(context) {
 }
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10569,7 +11354,7 @@ function effectiveType(varType, varDef) {
 }
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10580,57 +11365,57 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.specifiedRules = undefined;
 
-var _UniqueOperationNames = __webpack_require__(58);
+var _UniqueOperationNames = __webpack_require__(59);
 
-var _LoneAnonymousOperation = __webpack_require__(44);
+var _LoneAnonymousOperation = __webpack_require__(45);
 
-var _SingleFieldSubscriptions = __webpack_require__(53);
+var _SingleFieldSubscriptions = __webpack_require__(54);
 
-var _KnownTypeNames = __webpack_require__(43);
+var _KnownTypeNames = __webpack_require__(44);
 
-var _FragmentsOnCompositeTypes = __webpack_require__(39);
+var _FragmentsOnCompositeTypes = __webpack_require__(40);
 
-var _VariablesAreInputTypes = __webpack_require__(60);
+var _VariablesAreInputTypes = __webpack_require__(61);
 
-var _ScalarLeafs = __webpack_require__(52);
+var _ScalarLeafs = __webpack_require__(53);
 
-var _FieldsOnCorrectType = __webpack_require__(38);
+var _FieldsOnCorrectType = __webpack_require__(39);
 
-var _UniqueFragmentNames = __webpack_require__(56);
+var _UniqueFragmentNames = __webpack_require__(57);
 
-var _KnownFragmentNames = __webpack_require__(42);
+var _KnownFragmentNames = __webpack_require__(43);
 
-var _NoUnusedFragments = __webpack_require__(47);
+var _NoUnusedFragments = __webpack_require__(48);
 
-var _PossibleFragmentSpreads = __webpack_require__(50);
+var _PossibleFragmentSpreads = __webpack_require__(51);
 
-var _NoFragmentCycles = __webpack_require__(45);
+var _NoFragmentCycles = __webpack_require__(46);
 
-var _UniqueVariableNames = __webpack_require__(59);
+var _UniqueVariableNames = __webpack_require__(60);
 
-var _NoUndefinedVariables = __webpack_require__(46);
+var _NoUndefinedVariables = __webpack_require__(47);
 
-var _NoUnusedVariables = __webpack_require__(48);
+var _NoUnusedVariables = __webpack_require__(49);
 
-var _KnownDirectives = __webpack_require__(41);
+var _KnownDirectives = __webpack_require__(42);
 
-var _UniqueDirectivesPerLocation = __webpack_require__(55);
+var _UniqueDirectivesPerLocation = __webpack_require__(56);
 
-var _KnownArgumentNames = __webpack_require__(40);
+var _KnownArgumentNames = __webpack_require__(41);
 
-var _UniqueArgumentNames = __webpack_require__(54);
+var _UniqueArgumentNames = __webpack_require__(55);
 
-var _ArgumentsOfCorrectType = __webpack_require__(36);
+var _ArgumentsOfCorrectType = __webpack_require__(37);
 
-var _ProvidedNonNullArguments = __webpack_require__(51);
+var _ProvidedNonNullArguments = __webpack_require__(52);
 
-var _DefaultValuesOfCorrectType = __webpack_require__(37);
+var _DefaultValuesOfCorrectType = __webpack_require__(38);
 
-var _VariablesInAllowedPosition = __webpack_require__(61);
+var _VariablesInAllowedPosition = __webpack_require__(62);
 
-var _OverlappingFieldsCanBeMerged = __webpack_require__(49);
+var _OverlappingFieldsCanBeMerged = __webpack_require__(50);
 
-var _UniqueInputFieldNames = __webpack_require__(57);
+var _UniqueInputFieldNames = __webpack_require__(58);
 
 /**
  * This set includes all validation rules defined by the GraphQL spec.
@@ -10726,7 +11511,7 @@ var specifiedRules = exports.specifiedRules = [_UniqueOperationNames.UniqueOpera
 // Spec Section: "Lone Anonymous Operation"
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10754,7 +11539,7 @@ var _schema = __webpack_require__(6);
 
 var _TypeInfo = __webpack_require__(30);
 
-var _specifiedRules = __webpack_require__(62);
+var _specifiedRules = __webpack_require__(63);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -10964,7 +11749,7 @@ var ValidationContext = exports.ValidationContext = function () {
 }();
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10982,11 +11767,11 @@ var _exception = __webpack_require__(19);
 
 var _exception2 = _interopRequireDefault(_exception);
 
-var _helpers = __webpack_require__(95);
+var _helpers = __webpack_require__(96);
 
-var _decorators = __webpack_require__(93);
+var _decorators = __webpack_require__(94);
 
-var _logger = __webpack_require__(103);
+var _logger = __webpack_require__(104);
 
 var _logger2 = _interopRequireDefault(_logger);
 
@@ -11075,7 +11860,7 @@ exports.logger = _logger2['default'];
 
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -19619,821 +20404,39 @@ return /******/ (function(modules) { // webpackBootstrap
 ;
 
 /***/ }),
-/* 66 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _graphql = __webpack_require__(75);
-
-Object.defineProperty(exports, 'graphql', {
-  enumerable: true,
-  get: function get() {
-    return _graphql.graphql;
-  }
-});
-
-var _type = __webpack_require__(80);
-
-Object.defineProperty(exports, 'GraphQLSchema', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLSchema;
-  }
-});
-Object.defineProperty(exports, 'GraphQLScalarType', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLScalarType;
-  }
-});
-Object.defineProperty(exports, 'GraphQLObjectType', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLObjectType;
-  }
-});
-Object.defineProperty(exports, 'GraphQLInterfaceType', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLInterfaceType;
-  }
-});
-Object.defineProperty(exports, 'GraphQLUnionType', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLUnionType;
-  }
-});
-Object.defineProperty(exports, 'GraphQLEnumType', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLEnumType;
-  }
-});
-Object.defineProperty(exports, 'GraphQLInputObjectType', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLInputObjectType;
-  }
-});
-Object.defineProperty(exports, 'GraphQLList', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLList;
-  }
-});
-Object.defineProperty(exports, 'GraphQLNonNull', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLNonNull;
-  }
-});
-Object.defineProperty(exports, 'GraphQLDirective', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLDirective;
-  }
-});
-Object.defineProperty(exports, 'TypeKind', {
-  enumerable: true,
-  get: function get() {
-    return _type.TypeKind;
-  }
-});
-Object.defineProperty(exports, 'DirectiveLocation', {
-  enumerable: true,
-  get: function get() {
-    return _type.DirectiveLocation;
-  }
-});
-Object.defineProperty(exports, 'GraphQLInt', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLInt;
-  }
-});
-Object.defineProperty(exports, 'GraphQLFloat', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLFloat;
-  }
-});
-Object.defineProperty(exports, 'GraphQLString', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLString;
-  }
-});
-Object.defineProperty(exports, 'GraphQLBoolean', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLBoolean;
-  }
-});
-Object.defineProperty(exports, 'GraphQLID', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLID;
-  }
-});
-Object.defineProperty(exports, 'specifiedDirectives', {
-  enumerable: true,
-  get: function get() {
-    return _type.specifiedDirectives;
-  }
-});
-Object.defineProperty(exports, 'GraphQLIncludeDirective', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLIncludeDirective;
-  }
-});
-Object.defineProperty(exports, 'GraphQLSkipDirective', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLSkipDirective;
-  }
-});
-Object.defineProperty(exports, 'GraphQLDeprecatedDirective', {
-  enumerable: true,
-  get: function get() {
-    return _type.GraphQLDeprecatedDirective;
-  }
-});
-Object.defineProperty(exports, 'DEFAULT_DEPRECATION_REASON', {
-  enumerable: true,
-  get: function get() {
-    return _type.DEFAULT_DEPRECATION_REASON;
-  }
-});
-Object.defineProperty(exports, 'SchemaMetaFieldDef', {
-  enumerable: true,
-  get: function get() {
-    return _type.SchemaMetaFieldDef;
-  }
-});
-Object.defineProperty(exports, 'TypeMetaFieldDef', {
-  enumerable: true,
-  get: function get() {
-    return _type.TypeMetaFieldDef;
-  }
-});
-Object.defineProperty(exports, 'TypeNameMetaFieldDef', {
-  enumerable: true,
-  get: function get() {
-    return _type.TypeNameMetaFieldDef;
-  }
-});
-Object.defineProperty(exports, '__Schema', {
-  enumerable: true,
-  get: function get() {
-    return _type.__Schema;
-  }
-});
-Object.defineProperty(exports, '__Directive', {
-  enumerable: true,
-  get: function get() {
-    return _type.__Directive;
-  }
-});
-Object.defineProperty(exports, '__DirectiveLocation', {
-  enumerable: true,
-  get: function get() {
-    return _type.__DirectiveLocation;
-  }
-});
-Object.defineProperty(exports, '__Type', {
-  enumerable: true,
-  get: function get() {
-    return _type.__Type;
-  }
-});
-Object.defineProperty(exports, '__Field', {
-  enumerable: true,
-  get: function get() {
-    return _type.__Field;
-  }
-});
-Object.defineProperty(exports, '__InputValue', {
-  enumerable: true,
-  get: function get() {
-    return _type.__InputValue;
-  }
-});
-Object.defineProperty(exports, '__EnumValue', {
-  enumerable: true,
-  get: function get() {
-    return _type.__EnumValue;
-  }
-});
-Object.defineProperty(exports, '__TypeKind', {
-  enumerable: true,
-  get: function get() {
-    return _type.__TypeKind;
-  }
-});
-Object.defineProperty(exports, 'isType', {
-  enumerable: true,
-  get: function get() {
-    return _type.isType;
-  }
-});
-Object.defineProperty(exports, 'isInputType', {
-  enumerable: true,
-  get: function get() {
-    return _type.isInputType;
-  }
-});
-Object.defineProperty(exports, 'isOutputType', {
-  enumerable: true,
-  get: function get() {
-    return _type.isOutputType;
-  }
-});
-Object.defineProperty(exports, 'isLeafType', {
-  enumerable: true,
-  get: function get() {
-    return _type.isLeafType;
-  }
-});
-Object.defineProperty(exports, 'isCompositeType', {
-  enumerable: true,
-  get: function get() {
-    return _type.isCompositeType;
-  }
-});
-Object.defineProperty(exports, 'isAbstractType', {
-  enumerable: true,
-  get: function get() {
-    return _type.isAbstractType;
-  }
-});
-Object.defineProperty(exports, 'isNamedType', {
-  enumerable: true,
-  get: function get() {
-    return _type.isNamedType;
-  }
-});
-Object.defineProperty(exports, 'assertType', {
-  enumerable: true,
-  get: function get() {
-    return _type.assertType;
-  }
-});
-Object.defineProperty(exports, 'assertInputType', {
-  enumerable: true,
-  get: function get() {
-    return _type.assertInputType;
-  }
-});
-Object.defineProperty(exports, 'assertOutputType', {
-  enumerable: true,
-  get: function get() {
-    return _type.assertOutputType;
-  }
-});
-Object.defineProperty(exports, 'assertLeafType', {
-  enumerable: true,
-  get: function get() {
-    return _type.assertLeafType;
-  }
-});
-Object.defineProperty(exports, 'assertCompositeType', {
-  enumerable: true,
-  get: function get() {
-    return _type.assertCompositeType;
-  }
-});
-Object.defineProperty(exports, 'assertAbstractType', {
-  enumerable: true,
-  get: function get() {
-    return _type.assertAbstractType;
-  }
-});
-Object.defineProperty(exports, 'assertNamedType', {
-  enumerable: true,
-  get: function get() {
-    return _type.assertNamedType;
-  }
-});
-Object.defineProperty(exports, 'getNullableType', {
-  enumerable: true,
-  get: function get() {
-    return _type.getNullableType;
-  }
-});
-Object.defineProperty(exports, 'getNamedType', {
-  enumerable: true,
-  get: function get() {
-    return _type.getNamedType;
-  }
-});
-
-var _language = __webpack_require__(76);
-
-Object.defineProperty(exports, 'Source', {
-  enumerable: true,
-  get: function get() {
-    return _language.Source;
-  }
-});
-Object.defineProperty(exports, 'getLocation', {
-  enumerable: true,
-  get: function get() {
-    return _language.getLocation;
-  }
-});
-Object.defineProperty(exports, 'parse', {
-  enumerable: true,
-  get: function get() {
-    return _language.parse;
-  }
-});
-Object.defineProperty(exports, 'parseValue', {
-  enumerable: true,
-  get: function get() {
-    return _language.parseValue;
-  }
-});
-Object.defineProperty(exports, 'parseType', {
-  enumerable: true,
-  get: function get() {
-    return _language.parseType;
-  }
-});
-Object.defineProperty(exports, 'print', {
-  enumerable: true,
-  get: function get() {
-    return _language.print;
-  }
-});
-Object.defineProperty(exports, 'visit', {
-  enumerable: true,
-  get: function get() {
-    return _language.visit;
-  }
-});
-Object.defineProperty(exports, 'visitInParallel', {
-  enumerable: true,
-  get: function get() {
-    return _language.visitInParallel;
-  }
-});
-Object.defineProperty(exports, 'visitWithTypeInfo', {
-  enumerable: true,
-  get: function get() {
-    return _language.visitWithTypeInfo;
-  }
-});
-Object.defineProperty(exports, 'getVisitFn', {
-  enumerable: true,
-  get: function get() {
-    return _language.getVisitFn;
-  }
-});
-Object.defineProperty(exports, 'Kind', {
-  enumerable: true,
-  get: function get() {
-    return _language.Kind;
-  }
-});
-Object.defineProperty(exports, 'TokenKind', {
-  enumerable: true,
-  get: function get() {
-    return _language.TokenKind;
-  }
-});
-Object.defineProperty(exports, 'BREAK', {
-  enumerable: true,
-  get: function get() {
-    return _language.BREAK;
-  }
-});
-
-var _execution = __webpack_require__(74);
-
-Object.defineProperty(exports, 'execute', {
-  enumerable: true,
-  get: function get() {
-    return _execution.execute;
-  }
-});
-Object.defineProperty(exports, 'defaultFieldResolver', {
-  enumerable: true,
-  get: function get() {
-    return _execution.defaultFieldResolver;
-  }
-});
-Object.defineProperty(exports, 'responsePathAsArray', {
-  enumerable: true,
-  get: function get() {
-    return _execution.responsePathAsArray;
-  }
-});
-Object.defineProperty(exports, 'getDirectiveValues', {
-  enumerable: true,
-  get: function get() {
-    return _execution.getDirectiveValues;
-  }
-});
-
-var _subscription = __webpack_require__(77);
-
-Object.defineProperty(exports, 'subscribe', {
-  enumerable: true,
-  get: function get() {
-    return _subscription.subscribe;
-  }
-});
-Object.defineProperty(exports, 'createSourceEventStream', {
-  enumerable: true,
-  get: function get() {
-    return _subscription.createSourceEventStream;
-  }
-});
-
-var _validation = __webpack_require__(91);
-
-Object.defineProperty(exports, 'validate', {
-  enumerable: true,
-  get: function get() {
-    return _validation.validate;
-  }
-});
-Object.defineProperty(exports, 'ValidationContext', {
-  enumerable: true,
-  get: function get() {
-    return _validation.ValidationContext;
-  }
-});
-Object.defineProperty(exports, 'specifiedRules', {
-  enumerable: true,
-  get: function get() {
-    return _validation.specifiedRules;
-  }
-});
-Object.defineProperty(exports, 'ArgumentsOfCorrectTypeRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.ArgumentsOfCorrectTypeRule;
-  }
-});
-Object.defineProperty(exports, 'DefaultValuesOfCorrectTypeRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.DefaultValuesOfCorrectTypeRule;
-  }
-});
-Object.defineProperty(exports, 'FieldsOnCorrectTypeRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.FieldsOnCorrectTypeRule;
-  }
-});
-Object.defineProperty(exports, 'FragmentsOnCompositeTypesRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.FragmentsOnCompositeTypesRule;
-  }
-});
-Object.defineProperty(exports, 'KnownArgumentNamesRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.KnownArgumentNamesRule;
-  }
-});
-Object.defineProperty(exports, 'KnownDirectivesRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.KnownDirectivesRule;
-  }
-});
-Object.defineProperty(exports, 'KnownFragmentNamesRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.KnownFragmentNamesRule;
-  }
-});
-Object.defineProperty(exports, 'KnownTypeNamesRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.KnownTypeNamesRule;
-  }
-});
-Object.defineProperty(exports, 'LoneAnonymousOperationRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.LoneAnonymousOperationRule;
-  }
-});
-Object.defineProperty(exports, 'NoFragmentCyclesRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.NoFragmentCyclesRule;
-  }
-});
-Object.defineProperty(exports, 'NoUndefinedVariablesRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.NoUndefinedVariablesRule;
-  }
-});
-Object.defineProperty(exports, 'NoUnusedFragmentsRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.NoUnusedFragmentsRule;
-  }
-});
-Object.defineProperty(exports, 'NoUnusedVariablesRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.NoUnusedVariablesRule;
-  }
-});
-Object.defineProperty(exports, 'OverlappingFieldsCanBeMergedRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.OverlappingFieldsCanBeMergedRule;
-  }
-});
-Object.defineProperty(exports, 'PossibleFragmentSpreadsRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.PossibleFragmentSpreadsRule;
-  }
-});
-Object.defineProperty(exports, 'ProvidedNonNullArgumentsRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.ProvidedNonNullArgumentsRule;
-  }
-});
-Object.defineProperty(exports, 'ScalarLeafsRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.ScalarLeafsRule;
-  }
-});
-Object.defineProperty(exports, 'SingleFieldSubscriptionsRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.SingleFieldSubscriptionsRule;
-  }
-});
-Object.defineProperty(exports, 'UniqueArgumentNamesRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.UniqueArgumentNamesRule;
-  }
-});
-Object.defineProperty(exports, 'UniqueDirectivesPerLocationRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.UniqueDirectivesPerLocationRule;
-  }
-});
-Object.defineProperty(exports, 'UniqueFragmentNamesRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.UniqueFragmentNamesRule;
-  }
-});
-Object.defineProperty(exports, 'UniqueInputFieldNamesRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.UniqueInputFieldNamesRule;
-  }
-});
-Object.defineProperty(exports, 'UniqueOperationNamesRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.UniqueOperationNamesRule;
-  }
-});
-Object.defineProperty(exports, 'UniqueVariableNamesRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.UniqueVariableNamesRule;
-  }
-});
-Object.defineProperty(exports, 'VariablesAreInputTypesRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.VariablesAreInputTypesRule;
-  }
-});
-Object.defineProperty(exports, 'VariablesInAllowedPositionRule', {
-  enumerable: true,
-  get: function get() {
-    return _validation.VariablesInAllowedPositionRule;
-  }
-});
-
-var _error = __webpack_require__(0);
-
-Object.defineProperty(exports, 'GraphQLError', {
-  enumerable: true,
-  get: function get() {
-    return _error.GraphQLError;
-  }
-});
-Object.defineProperty(exports, 'formatError', {
-  enumerable: true,
-  get: function get() {
-    return _error.formatError;
-  }
-});
-
-var _utilities = __webpack_require__(87);
-
-Object.defineProperty(exports, 'introspectionQuery', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.introspectionQuery;
-  }
-});
-Object.defineProperty(exports, 'getOperationAST', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.getOperationAST;
-  }
-});
-Object.defineProperty(exports, 'buildClientSchema', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.buildClientSchema;
-  }
-});
-Object.defineProperty(exports, 'buildASTSchema', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.buildASTSchema;
-  }
-});
-Object.defineProperty(exports, 'buildSchema', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.buildSchema;
-  }
-});
-Object.defineProperty(exports, 'extendSchema', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.extendSchema;
-  }
-});
-Object.defineProperty(exports, 'printSchema', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.printSchema;
-  }
-});
-Object.defineProperty(exports, 'printIntrospectionSchema', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.printIntrospectionSchema;
-  }
-});
-Object.defineProperty(exports, 'printType', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.printType;
-  }
-});
-Object.defineProperty(exports, 'typeFromAST', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.typeFromAST;
-  }
-});
-Object.defineProperty(exports, 'valueFromAST', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.valueFromAST;
-  }
-});
-Object.defineProperty(exports, 'astFromValue', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.astFromValue;
-  }
-});
-Object.defineProperty(exports, 'TypeInfo', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.TypeInfo;
-  }
-});
-Object.defineProperty(exports, 'isValidJSValue', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.isValidJSValue;
-  }
-});
-Object.defineProperty(exports, 'isValidLiteralValue', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.isValidLiteralValue;
-  }
-});
-Object.defineProperty(exports, 'concatAST', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.concatAST;
-  }
-});
-Object.defineProperty(exports, 'separateOperations', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.separateOperations;
-  }
-});
-Object.defineProperty(exports, 'isEqualType', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.isEqualType;
-  }
-});
-Object.defineProperty(exports, 'isTypeSubTypeOf', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.isTypeSubTypeOf;
-  }
-});
-Object.defineProperty(exports, 'doTypesOverlap', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.doTypesOverlap;
-  }
-});
-Object.defineProperty(exports, 'assertValidName', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.assertValidName;
-  }
-});
-Object.defineProperty(exports, 'findBreakingChanges', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.findBreakingChanges;
-  }
-});
-Object.defineProperty(exports, 'BreakingChangeType', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.BreakingChangeType;
-  }
-});
-Object.defineProperty(exports, 'DangerousChangeType', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.DangerousChangeType;
-  }
-});
-Object.defineProperty(exports, 'findDeprecatedUsages', {
-  enumerable: true,
-  get: function get() {
-    return _utilities.findDeprecatedUsages;
-  }
-});
-
-/***/ }),
 /* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(107);
+var Handlebars = __webpack_require__(108);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "    <li class=\"item\" style=\"margin-bottom:10px\">\r\n        <span class=\"titile\">"
+  return "    <li class=\"item\" style=\"margin-bottom:10px\">\r\n        <span>"
     + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
-    + "</span>\r\n        <span class=\"source\" style=\"color:#ff0000;text-decoration:underline\">("
+    + "</span>\r\n        <span style=\"color:#ff0000;text-decoration:underline\">("
     + alias4(((helper = (helper = helpers.source || (depth0 != null ? depth0.source : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"source","hash":{},"data":data}) : helper)))
-    + ")</span><br>\r\n        <span class=\"author\" style=\"color:#c0c0c0\">Share By:"
+    + ")</span><br>\r\n        <span style=\"color:#c0c0c0\">Share By:"
     + alias4(((helper = (helper = helpers.by || (depth0 != null ? depth0.by : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"by","hash":{},"data":data}) : helper)))
+    + "</span>\r\n        <span style=\"color:#ff8000;margin-left:10px\">Like:"
+    + alias4(((helper = (helper = helpers.like || (depth0 != null ? depth0.like : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"like","hash":{},"data":data}) : helper)))
+    + "</span>\r\n        <span style=\"color:#000040;margin-left:10px\">Location:"
+    + alias4(((helper = (helper = helpers.address || (depth0 != null ? depth0.address : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"address","hash":{},"data":data}) : helper)))
     + "</span>\r\n    </li>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, options, buffer = 
-  "<ol class=\"list\">\r\n";
-  stack1 = ((helper = (helper = helpers.result || (depth0 != null ? depth0.result : depth0)) != null ? helper : helpers.helperMissing),(options={"name":"result","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data}),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),options) : helper));
-  if (!helpers.result) { stack1 = helpers.blockHelperMissing.call(depth0,stack1,options)}
-  if (stack1 != null) { buffer += stack1; }
-  return buffer + "</ol>";
+    var stack1;
+
+  return "<ol class=\"list\">\r\n"
+    + ((stack1 = helpers.blockHelperMissing.call(depth0,container.lambda(((stack1 = (depth0 != null ? depth0.result : depth0)) != null ? stack1.story : stack1), depth0),{"name":"result.story","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "</ol>";
 },"useData":true});
 
 /***/ }),
 /* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var authorData = __webpack_require__(109);
-var shareData = __webpack_require__(110);
+var authorData = __webpack_require__(110);
+var shareData = __webpack_require__(111);
 module.exports = {
     authorData: authorData,
     shareData: shareData
@@ -20441,6 +20444,27 @@ module.exports = {
 
 /***/ }),
 /* 69 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var { buildSchema } = __webpack_require__(33);
+module.exports = buildSchema(`
+    type Query{
+        article:[Message],
+        author: [Person]
+    },
+    type Message{
+        title: String,
+        source: String,
+        like: Int
+    },
+    type Person{
+        name: String,
+        address: String
+    }
+`)
+
+/***/ }),
+/* 70 */
 /***/ (function(module, exports) {
 
 var g;
@@ -20467,7 +20491,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -20653,7 +20677,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20692,7 +20716,7 @@ function formatError(error) {
  */
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20730,7 +20754,7 @@ function locatedError(originalError, nodes, path) {
  */
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20784,7 +20808,7 @@ function lpad(len, str) {
 }
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20825,7 +20849,7 @@ Object.defineProperty(exports, 'getDirectiveValues', {
 });
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20838,7 +20862,7 @@ exports.graphql = graphql;
 
 var _parser = __webpack_require__(20);
 
-var _validate = __webpack_require__(63);
+var _validate = __webpack_require__(64);
 
 var _execute = __webpack_require__(23);
 
@@ -20911,7 +20935,7 @@ function graphqlImpl(schema, source, rootValue, contextValue, variableValues, op
 }
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20976,7 +21000,7 @@ Object.defineProperty(exports, 'print', {
   }
 });
 
-var _source = __webpack_require__(33);
+var _source = __webpack_require__(34);
 
 Object.defineProperty(exports, 'Source', {
   enumerable: true,
@@ -21027,7 +21051,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 exports.Kind = Kind;
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21037,7 +21061,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _subscribe = __webpack_require__(79);
+var _subscribe = __webpack_require__(80);
 
 Object.defineProperty(exports, 'subscribe', {
   enumerable: true,
@@ -21053,7 +21077,7 @@ Object.defineProperty(exports, 'createSourceEventStream', {
 });
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21128,7 +21152,7 @@ function iteratorResult(value) {
 }
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21150,7 +21174,7 @@ var _invariant = __webpack_require__(3);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _mapAsyncIterator = __webpack_require__(78);
+var _mapAsyncIterator = __webpack_require__(79);
 
 var _mapAsyncIterator2 = _interopRequireDefault(_mapAsyncIterator);
 
@@ -21252,7 +21276,7 @@ function createSourceEventStream(schema, document, rootValue, contextValue, vari
 }
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21572,7 +21596,7 @@ Object.defineProperty(exports, 'TypeNameMetaFieldDef', {
 });
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21887,7 +21911,7 @@ function cannotExecuteClientSchema() {
 }
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21927,7 +21951,7 @@ function concatAST(asts) {
  */
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21950,7 +21974,7 @@ var _keyValMap = __webpack_require__(25);
 
 var _keyValMap2 = _interopRequireDefault(_keyValMap);
 
-var _buildASTSchema = __webpack_require__(34);
+var _buildASTSchema = __webpack_require__(35);
 
 var _valueFromAST = __webpack_require__(18);
 
@@ -22467,7 +22491,7 @@ function cannotExecuteExtendedSchema() {
 }
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22909,7 +22933,7 @@ function findInterfacesRemovedFromObjectTypes(oldSchema, newSchema) {
 }
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22974,7 +22998,7 @@ function findDeprecatedUsages(schema, ast) {
  */
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23022,7 +23046,7 @@ function getOperationAST(documentAST, operationName) {
  */
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23032,7 +23056,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _introspectionQuery = __webpack_require__(88);
+var _introspectionQuery = __webpack_require__(89);
 
 Object.defineProperty(exports, 'introspectionQuery', {
   enumerable: true,
@@ -23041,7 +23065,7 @@ Object.defineProperty(exports, 'introspectionQuery', {
   }
 });
 
-var _getOperationAST = __webpack_require__(86);
+var _getOperationAST = __webpack_require__(87);
 
 Object.defineProperty(exports, 'getOperationAST', {
   enumerable: true,
@@ -23050,7 +23074,7 @@ Object.defineProperty(exports, 'getOperationAST', {
   }
 });
 
-var _buildClientSchema = __webpack_require__(81);
+var _buildClientSchema = __webpack_require__(82);
 
 Object.defineProperty(exports, 'buildClientSchema', {
   enumerable: true,
@@ -23059,7 +23083,7 @@ Object.defineProperty(exports, 'buildClientSchema', {
   }
 });
 
-var _buildASTSchema = __webpack_require__(34);
+var _buildASTSchema = __webpack_require__(35);
 
 Object.defineProperty(exports, 'buildASTSchema', {
   enumerable: true,
@@ -23074,7 +23098,7 @@ Object.defineProperty(exports, 'buildSchema', {
   }
 });
 
-var _extendSchema = __webpack_require__(83);
+var _extendSchema = __webpack_require__(84);
 
 Object.defineProperty(exports, 'extendSchema', {
   enumerable: true,
@@ -23083,7 +23107,7 @@ Object.defineProperty(exports, 'extendSchema', {
   }
 });
 
-var _schemaPrinter = __webpack_require__(89);
+var _schemaPrinter = __webpack_require__(90);
 
 Object.defineProperty(exports, 'printSchema', {
   enumerable: true,
@@ -23140,7 +23164,7 @@ Object.defineProperty(exports, 'TypeInfo', {
   }
 });
 
-var _isValidJSValue = __webpack_require__(35);
+var _isValidJSValue = __webpack_require__(36);
 
 Object.defineProperty(exports, 'isValidJSValue', {
   enumerable: true,
@@ -23158,7 +23182,7 @@ Object.defineProperty(exports, 'isValidLiteralValue', {
   }
 });
 
-var _concatAST = __webpack_require__(82);
+var _concatAST = __webpack_require__(83);
 
 Object.defineProperty(exports, 'concatAST', {
   enumerable: true,
@@ -23167,7 +23191,7 @@ Object.defineProperty(exports, 'concatAST', {
   }
 });
 
-var _separateOperations = __webpack_require__(90);
+var _separateOperations = __webpack_require__(91);
 
 Object.defineProperty(exports, 'separateOperations', {
   enumerable: true,
@@ -23206,7 +23230,7 @@ Object.defineProperty(exports, 'assertValidName', {
   }
 });
 
-var _findBreakingChanges = __webpack_require__(84);
+var _findBreakingChanges = __webpack_require__(85);
 
 Object.defineProperty(exports, 'BreakingChangeType', {
   enumerable: true,
@@ -23227,7 +23251,7 @@ Object.defineProperty(exports, 'findBreakingChanges', {
   }
 });
 
-var _findDeprecatedUsages = __webpack_require__(85);
+var _findDeprecatedUsages = __webpack_require__(86);
 
 Object.defineProperty(exports, 'findDeprecatedUsages', {
   enumerable: true,
@@ -23237,7 +23261,7 @@ Object.defineProperty(exports, 'findDeprecatedUsages', {
 });
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23257,7 +23281,7 @@ var introspectionQuery = exports.introspectionQuery = '\n  query IntrospectionQu
  */
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23547,7 +23571,7 @@ function breakLine(line, len) {
 }
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23648,7 +23672,7 @@ function collectTransitiveDependencies(collected, depGraph, fromName) {
 }
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23658,7 +23682,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _validate = __webpack_require__(63);
+var _validate = __webpack_require__(64);
 
 Object.defineProperty(exports, 'validate', {
   enumerable: true,
@@ -23673,7 +23697,7 @@ Object.defineProperty(exports, 'ValidationContext', {
   }
 });
 
-var _specifiedRules = __webpack_require__(62);
+var _specifiedRules = __webpack_require__(63);
 
 Object.defineProperty(exports, 'specifiedRules', {
   enumerable: true,
@@ -23682,7 +23706,7 @@ Object.defineProperty(exports, 'specifiedRules', {
   }
 });
 
-var _ArgumentsOfCorrectType = __webpack_require__(36);
+var _ArgumentsOfCorrectType = __webpack_require__(37);
 
 Object.defineProperty(exports, 'ArgumentsOfCorrectTypeRule', {
   enumerable: true,
@@ -23691,7 +23715,7 @@ Object.defineProperty(exports, 'ArgumentsOfCorrectTypeRule', {
   }
 });
 
-var _DefaultValuesOfCorrectType = __webpack_require__(37);
+var _DefaultValuesOfCorrectType = __webpack_require__(38);
 
 Object.defineProperty(exports, 'DefaultValuesOfCorrectTypeRule', {
   enumerable: true,
@@ -23700,7 +23724,7 @@ Object.defineProperty(exports, 'DefaultValuesOfCorrectTypeRule', {
   }
 });
 
-var _FieldsOnCorrectType = __webpack_require__(38);
+var _FieldsOnCorrectType = __webpack_require__(39);
 
 Object.defineProperty(exports, 'FieldsOnCorrectTypeRule', {
   enumerable: true,
@@ -23709,7 +23733,7 @@ Object.defineProperty(exports, 'FieldsOnCorrectTypeRule', {
   }
 });
 
-var _FragmentsOnCompositeTypes = __webpack_require__(39);
+var _FragmentsOnCompositeTypes = __webpack_require__(40);
 
 Object.defineProperty(exports, 'FragmentsOnCompositeTypesRule', {
   enumerable: true,
@@ -23718,7 +23742,7 @@ Object.defineProperty(exports, 'FragmentsOnCompositeTypesRule', {
   }
 });
 
-var _KnownArgumentNames = __webpack_require__(40);
+var _KnownArgumentNames = __webpack_require__(41);
 
 Object.defineProperty(exports, 'KnownArgumentNamesRule', {
   enumerable: true,
@@ -23727,7 +23751,7 @@ Object.defineProperty(exports, 'KnownArgumentNamesRule', {
   }
 });
 
-var _KnownDirectives = __webpack_require__(41);
+var _KnownDirectives = __webpack_require__(42);
 
 Object.defineProperty(exports, 'KnownDirectivesRule', {
   enumerable: true,
@@ -23736,7 +23760,7 @@ Object.defineProperty(exports, 'KnownDirectivesRule', {
   }
 });
 
-var _KnownFragmentNames = __webpack_require__(42);
+var _KnownFragmentNames = __webpack_require__(43);
 
 Object.defineProperty(exports, 'KnownFragmentNamesRule', {
   enumerable: true,
@@ -23745,7 +23769,7 @@ Object.defineProperty(exports, 'KnownFragmentNamesRule', {
   }
 });
 
-var _KnownTypeNames = __webpack_require__(43);
+var _KnownTypeNames = __webpack_require__(44);
 
 Object.defineProperty(exports, 'KnownTypeNamesRule', {
   enumerable: true,
@@ -23754,7 +23778,7 @@ Object.defineProperty(exports, 'KnownTypeNamesRule', {
   }
 });
 
-var _LoneAnonymousOperation = __webpack_require__(44);
+var _LoneAnonymousOperation = __webpack_require__(45);
 
 Object.defineProperty(exports, 'LoneAnonymousOperationRule', {
   enumerable: true,
@@ -23763,7 +23787,7 @@ Object.defineProperty(exports, 'LoneAnonymousOperationRule', {
   }
 });
 
-var _NoFragmentCycles = __webpack_require__(45);
+var _NoFragmentCycles = __webpack_require__(46);
 
 Object.defineProperty(exports, 'NoFragmentCyclesRule', {
   enumerable: true,
@@ -23772,7 +23796,7 @@ Object.defineProperty(exports, 'NoFragmentCyclesRule', {
   }
 });
 
-var _NoUndefinedVariables = __webpack_require__(46);
+var _NoUndefinedVariables = __webpack_require__(47);
 
 Object.defineProperty(exports, 'NoUndefinedVariablesRule', {
   enumerable: true,
@@ -23781,7 +23805,7 @@ Object.defineProperty(exports, 'NoUndefinedVariablesRule', {
   }
 });
 
-var _NoUnusedFragments = __webpack_require__(47);
+var _NoUnusedFragments = __webpack_require__(48);
 
 Object.defineProperty(exports, 'NoUnusedFragmentsRule', {
   enumerable: true,
@@ -23790,7 +23814,7 @@ Object.defineProperty(exports, 'NoUnusedFragmentsRule', {
   }
 });
 
-var _NoUnusedVariables = __webpack_require__(48);
+var _NoUnusedVariables = __webpack_require__(49);
 
 Object.defineProperty(exports, 'NoUnusedVariablesRule', {
   enumerable: true,
@@ -23799,7 +23823,7 @@ Object.defineProperty(exports, 'NoUnusedVariablesRule', {
   }
 });
 
-var _OverlappingFieldsCanBeMerged = __webpack_require__(49);
+var _OverlappingFieldsCanBeMerged = __webpack_require__(50);
 
 Object.defineProperty(exports, 'OverlappingFieldsCanBeMergedRule', {
   enumerable: true,
@@ -23808,7 +23832,7 @@ Object.defineProperty(exports, 'OverlappingFieldsCanBeMergedRule', {
   }
 });
 
-var _PossibleFragmentSpreads = __webpack_require__(50);
+var _PossibleFragmentSpreads = __webpack_require__(51);
 
 Object.defineProperty(exports, 'PossibleFragmentSpreadsRule', {
   enumerable: true,
@@ -23817,7 +23841,7 @@ Object.defineProperty(exports, 'PossibleFragmentSpreadsRule', {
   }
 });
 
-var _ProvidedNonNullArguments = __webpack_require__(51);
+var _ProvidedNonNullArguments = __webpack_require__(52);
 
 Object.defineProperty(exports, 'ProvidedNonNullArgumentsRule', {
   enumerable: true,
@@ -23826,7 +23850,7 @@ Object.defineProperty(exports, 'ProvidedNonNullArgumentsRule', {
   }
 });
 
-var _ScalarLeafs = __webpack_require__(52);
+var _ScalarLeafs = __webpack_require__(53);
 
 Object.defineProperty(exports, 'ScalarLeafsRule', {
   enumerable: true,
@@ -23835,7 +23859,7 @@ Object.defineProperty(exports, 'ScalarLeafsRule', {
   }
 });
 
-var _SingleFieldSubscriptions = __webpack_require__(53);
+var _SingleFieldSubscriptions = __webpack_require__(54);
 
 Object.defineProperty(exports, 'SingleFieldSubscriptionsRule', {
   enumerable: true,
@@ -23844,7 +23868,7 @@ Object.defineProperty(exports, 'SingleFieldSubscriptionsRule', {
   }
 });
 
-var _UniqueArgumentNames = __webpack_require__(54);
+var _UniqueArgumentNames = __webpack_require__(55);
 
 Object.defineProperty(exports, 'UniqueArgumentNamesRule', {
   enumerable: true,
@@ -23853,7 +23877,7 @@ Object.defineProperty(exports, 'UniqueArgumentNamesRule', {
   }
 });
 
-var _UniqueDirectivesPerLocation = __webpack_require__(55);
+var _UniqueDirectivesPerLocation = __webpack_require__(56);
 
 Object.defineProperty(exports, 'UniqueDirectivesPerLocationRule', {
   enumerable: true,
@@ -23862,7 +23886,7 @@ Object.defineProperty(exports, 'UniqueDirectivesPerLocationRule', {
   }
 });
 
-var _UniqueFragmentNames = __webpack_require__(56);
+var _UniqueFragmentNames = __webpack_require__(57);
 
 Object.defineProperty(exports, 'UniqueFragmentNamesRule', {
   enumerable: true,
@@ -23871,7 +23895,7 @@ Object.defineProperty(exports, 'UniqueFragmentNamesRule', {
   }
 });
 
-var _UniqueInputFieldNames = __webpack_require__(57);
+var _UniqueInputFieldNames = __webpack_require__(58);
 
 Object.defineProperty(exports, 'UniqueInputFieldNamesRule', {
   enumerable: true,
@@ -23880,7 +23904,7 @@ Object.defineProperty(exports, 'UniqueInputFieldNamesRule', {
   }
 });
 
-var _UniqueOperationNames = __webpack_require__(58);
+var _UniqueOperationNames = __webpack_require__(59);
 
 Object.defineProperty(exports, 'UniqueOperationNamesRule', {
   enumerable: true,
@@ -23889,7 +23913,7 @@ Object.defineProperty(exports, 'UniqueOperationNamesRule', {
   }
 });
 
-var _UniqueVariableNames = __webpack_require__(59);
+var _UniqueVariableNames = __webpack_require__(60);
 
 Object.defineProperty(exports, 'UniqueVariableNamesRule', {
   enumerable: true,
@@ -23898,7 +23922,7 @@ Object.defineProperty(exports, 'UniqueVariableNamesRule', {
   }
 });
 
-var _VariablesAreInputTypes = __webpack_require__(60);
+var _VariablesAreInputTypes = __webpack_require__(61);
 
 Object.defineProperty(exports, 'VariablesAreInputTypesRule', {
   enumerable: true,
@@ -23907,7 +23931,7 @@ Object.defineProperty(exports, 'VariablesAreInputTypesRule', {
   }
 });
 
-var _VariablesInAllowedPosition = __webpack_require__(61);
+var _VariablesInAllowedPosition = __webpack_require__(62);
 
 Object.defineProperty(exports, 'VariablesInAllowedPositionRule', {
   enumerable: true,
@@ -23917,7 +23941,7 @@ Object.defineProperty(exports, 'VariablesInAllowedPositionRule', {
 });
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23932,14 +23956,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'd
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
 
-var _handlebarsBase = __webpack_require__(64);
+var _handlebarsBase = __webpack_require__(65);
 
 var base = _interopRequireWildcard(_handlebarsBase);
 
 // Each of these augment the Handlebars object. No need to setup here.
 // (This is done to easily share code between commonjs and browse envs)
 
-var _handlebarsSafeString = __webpack_require__(106);
+var _handlebarsSafeString = __webpack_require__(107);
 
 var _handlebarsSafeString2 = _interopRequireDefault(_handlebarsSafeString);
 
@@ -23951,11 +23975,11 @@ var _handlebarsUtils = __webpack_require__(8);
 
 var Utils = _interopRequireWildcard(_handlebarsUtils);
 
-var _handlebarsRuntime = __webpack_require__(105);
+var _handlebarsRuntime = __webpack_require__(106);
 
 var runtime = _interopRequireWildcard(_handlebarsRuntime);
 
-var _handlebarsNoConflict = __webpack_require__(104);
+var _handlebarsNoConflict = __webpack_require__(105);
 
 var _handlebarsNoConflict2 = _interopRequireDefault(_handlebarsNoConflict);
 
@@ -23990,7 +24014,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24002,7 +24026,7 @@ exports.registerDefaultDecorators = registerDefaultDecorators;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _decoratorsInline = __webpack_require__(94);
+var _decoratorsInline = __webpack_require__(95);
 
 var _decoratorsInline2 = _interopRequireDefault(_decoratorsInline);
 
@@ -24013,7 +24037,7 @@ function registerDefaultDecorators(instance) {
 
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24049,7 +24073,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24061,31 +24085,31 @@ exports.registerDefaultHelpers = registerDefaultHelpers;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _helpersBlockHelperMissing = __webpack_require__(96);
+var _helpersBlockHelperMissing = __webpack_require__(97);
 
 var _helpersBlockHelperMissing2 = _interopRequireDefault(_helpersBlockHelperMissing);
 
-var _helpersEach = __webpack_require__(97);
+var _helpersEach = __webpack_require__(98);
 
 var _helpersEach2 = _interopRequireDefault(_helpersEach);
 
-var _helpersHelperMissing = __webpack_require__(98);
+var _helpersHelperMissing = __webpack_require__(99);
 
 var _helpersHelperMissing2 = _interopRequireDefault(_helpersHelperMissing);
 
-var _helpersIf = __webpack_require__(99);
+var _helpersIf = __webpack_require__(100);
 
 var _helpersIf2 = _interopRequireDefault(_helpersIf);
 
-var _helpersLog = __webpack_require__(100);
+var _helpersLog = __webpack_require__(101);
 
 var _helpersLog2 = _interopRequireDefault(_helpersLog);
 
-var _helpersLookup = __webpack_require__(101);
+var _helpersLookup = __webpack_require__(102);
 
 var _helpersLookup2 = _interopRequireDefault(_helpersLookup);
 
-var _helpersWith = __webpack_require__(102);
+var _helpersWith = __webpack_require__(103);
 
 var _helpersWith2 = _interopRequireDefault(_helpersWith);
 
@@ -24102,7 +24126,7 @@ function registerDefaultHelpers(instance) {
 
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24148,7 +24172,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24249,7 +24273,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 98 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24281,7 +24305,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 99 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24317,7 +24341,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 100 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24350,7 +24374,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 101 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24369,7 +24393,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 102 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24409,7 +24433,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 103 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24463,7 +24487,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 104 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24488,10 +24512,10 @@ exports['default'] = function (Handlebars) {
 module.exports = exports['default'];
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2xpYi9oYW5kbGViYXJzL25vLWNvbmZsaWN0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7O3FCQUNlLFVBQVMsVUFBVSxFQUFFOztBQUVsQyxNQUFJLElBQUksR0FBRyxPQUFPLE1BQU0sS0FBSyxXQUFXLEdBQUcsTUFBTSxHQUFHLE1BQU07TUFDdEQsV0FBVyxHQUFHLElBQUksQ0FBQyxVQUFVLENBQUM7O0FBRWxDLFlBQVUsQ0FBQyxVQUFVLEdBQUcsWUFBVztBQUNqQyxRQUFJLElBQUksQ0FBQyxVQUFVLEtBQUssVUFBVSxFQUFFO0FBQ2xDLFVBQUksQ0FBQyxVQUFVLEdBQUcsV0FBVyxDQUFDO0tBQy9CO0FBQ0QsV0FBTyxVQUFVLENBQUM7R0FDbkIsQ0FBQztDQUNIIiwiZmlsZSI6Im5vLWNvbmZsaWN0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiLyogZ2xvYmFsIHdpbmRvdyAqL1xuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24oSGFuZGxlYmFycykge1xuICAvKiBpc3RhbmJ1bCBpZ25vcmUgbmV4dCAqL1xuICBsZXQgcm9vdCA9IHR5cGVvZiBnbG9iYWwgIT09ICd1bmRlZmluZWQnID8gZ2xvYmFsIDogd2luZG93LFxuICAgICAgJEhhbmRsZWJhcnMgPSByb290LkhhbmRsZWJhcnM7XG4gIC8qIGlzdGFuYnVsIGlnbm9yZSBuZXh0ICovXG4gIEhhbmRsZWJhcnMubm9Db25mbGljdCA9IGZ1bmN0aW9uKCkge1xuICAgIGlmIChyb290LkhhbmRsZWJhcnMgPT09IEhhbmRsZWJhcnMpIHtcbiAgICAgIHJvb3QuSGFuZGxlYmFycyA9ICRIYW5kbGViYXJzO1xuICAgIH1cbiAgICByZXR1cm4gSGFuZGxlYmFycztcbiAgfTtcbn1cbiJdfQ==
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(69)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(70)))
 
 /***/ }),
-/* 105 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24520,7 +24544,7 @@ var _exception = __webpack_require__(19);
 
 var _exception2 = _interopRequireDefault(_exception);
 
-var _base = __webpack_require__(64);
+var _base = __webpack_require__(65);
 
 function checkRevision(compilerInfo) {
   var compilerRevision = compilerInfo && compilerInfo[0] || 1,
@@ -24805,7 +24829,7 @@ function executeDecorators(fn, prog, container, depths, data, blockParams) {
 
 
 /***/ }),
-/* 106 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24827,56 +24851,40 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 107 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Create a simple path alias to allow browserify to resolve
 // the runtime on a supported path.
-module.exports = __webpack_require__(92)['default'];
+module.exports = __webpack_require__(93)['default'];
 
 
 /***/ }),
-/* 108 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var tem = __webpack_require__(67);
-var { graphql, buildSchema } = __webpack_require__(66);
+var { graphql } = __webpack_require__(33);
 var data = __webpack_require__(68);
-var schemaStory = buildSchema(`
-    type Query{
-        title: [String],
-        source: [String],
-        by:[String]
+var schema = __webpack_require__(69);
+//设置解析器
+var root = {
+    article: () => {
+        return data.shareData.story;
     },
-`);
-var rootStory = {
-    title: () => {
-        var arr = [];
-        data.shareData.story.forEach(function(e) {
-            arr.push(e.title);
-        });
-        return arr;
-    },
-    source: () => {
-        var arr = [];
-        data.shareData.story.forEach(function(e) {
-            arr.push(e.source);
-        });
-        return arr;
-    },
-    by: () => {
+    author: () => {
         return data.authorData.author;
     }
 };
-var result = [];
-graphql(schemaStory, '{title,source,by}', rootStory).then(function(res) {
-    console.log("schema1:", res);
-    res.data.title.forEach((e, index) => {
-        result.push({
-            title: e,
-            by: res.data.by[index],
-            source: res.data.source[index]
-        });
+graphql(schema, '{article{title,source,like},author{name,address}}', root).then(function(res) {
+    var result = {
+            story: [],
+        }
+        //格式化数据
+    res.data.article.forEach((e, index) => {
+        e.by = res.data.author[index].name;
+        e.address = res.data.author[index].address;
+        result.story.push(e);
     });
     //拿到数据 开始渲染页面
     var html = tem({
@@ -24887,25 +24895,29 @@ graphql(schemaStory, '{title,source,by}', rootStory).then(function(res) {
 });
 
 /***/ }),
-/* 109 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var mock = __webpack_require__(65);
+var mock = __webpack_require__(66);
 var authorData = mock.mock({
-    'author|20': ['@name']
+    'author|20': [{
+        'name': '@cname',
+        'address': '@city(true)'
+    }]
 });
 console.log(authorData);
 module.exports = authorData;
 
 /***/ }),
-/* 110 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var mock = __webpack_require__(65);
+var mock = __webpack_require__(66);
 var shareData = mock.mock({
     'story|20': [{
         'title': '@title',
-        'source': '@domain'
+        'source': '@domain',
+        'like': '@natural(200,5000)'
     }],
 });
 console.log(shareData);

@@ -1,41 +1,25 @@
 var tem = require('./template/home.hbs');
-var { graphql, buildSchema } = require('graphql');
+var { graphql } = require('graphql');
 var data = require('./mock/index');
-var schemaStory = buildSchema(`
-    type Query{
-        title: [String],
-        source: [String],
-        by:[String]
+var schema = require('./model/schema');
+//设置解析器
+var root = {
+    article: () => {
+        return data.shareData.story;
     },
-`);
-var rootStory = {
-    title: () => {
-        var arr = [];
-        data.shareData.story.forEach(function(e) {
-            arr.push(e.title);
-        });
-        return arr;
-    },
-    source: () => {
-        var arr = [];
-        data.shareData.story.forEach(function(e) {
-            arr.push(e.source);
-        });
-        return arr;
-    },
-    by: () => {
+    author: () => {
         return data.authorData.author;
     }
 };
-var result = [];
-graphql(schemaStory, '{title,source,by}', rootStory).then(function(res) {
-    console.log("schema1:", res);
-    res.data.title.forEach((e, index) => {
-        result.push({
-            title: e,
-            by: res.data.by[index],
-            source: res.data.source[index]
-        });
+graphql(schema, '{article{title,source,like},author{name,address}}', root).then(function(res) {
+    var result = {
+            story: [],
+        }
+        //格式化数据
+    res.data.article.forEach((e, index) => {
+        e.by = res.data.author[index].name;
+        e.address = res.data.author[index].address;
+        result.story.push(e);
     });
     //拿到数据 开始渲染页面
     var html = tem({

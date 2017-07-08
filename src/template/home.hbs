@@ -1,9 +1,11 @@
 <ol class="list">
-    {{#result}}
+    {{#result.story}}
     <li class="item" style="margin-bottom:10px">
-        <span class="titile">{{title}}</span>
-        <span class="source" style="color:#ff0000;text-decoration:underline">({{source}})</span><br>
-        <span class="author" style="color:#c0c0c0">Share By:{{by}}</span>
+        <span>{{title}}</span>
+        <span style="color:#ff0000;text-decoration:underline">({{source}})</span><br>
+        <span style="color:#c0c0c0">Share By:{{by}}</span>
+        <span style="color:#ff8000;margin-left:10px">Like:{{like}}</span>
+        <span style="color:#000040;margin-left:10px">Location:{{address}}</span>
     </li>
-    {{/result}}
+    {{/result.story}}
 </ol>
