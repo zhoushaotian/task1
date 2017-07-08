@@ -24905,7 +24905,6 @@ var authorData = mock.mock({
         'address': '@city(true)'
     }]
 });
-console.log(authorData);
 module.exports = authorData;
 
 /***/ }),
